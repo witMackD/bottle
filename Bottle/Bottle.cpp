@@ -3,6 +3,8 @@
 
 #include <iostream>
 
+using namespace std;
+
 class Bottle
 {
 private:
@@ -10,7 +12,7 @@ private:
 	float ActualWaterLevel;
 
 public:
-	float const volume();
+	float volume() const;
 	float fill(float waterVolumeToBeFilled);
 	float pour(float waterVolumeToBePoured);
 	
@@ -21,7 +23,7 @@ public:
 	};
 };
 
-float const Bottle::volume()
+float Bottle::volume() const
 {
 	return this->ActualWaterLevel;
 }
